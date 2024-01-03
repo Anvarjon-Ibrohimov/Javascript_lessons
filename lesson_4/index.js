@@ -95,18 +95,17 @@ String data type- bu matnli tip
         * lastindexOf +
         * Search +
         * Includes +
-        * Slice
-        * Splice
-        * Substring
-        * Substr
-        * Replace
-        * Split
-        * Repeat
+        * Slice +
+        * Substring +
+        * Substr +
+        * Replace +
+        * Split +
+        * Repeat +
         * startWith +
         * endsWith +
-        * toLowercase
-        * toUppercase
-        * Trim
+        * toLowercase +
+        * toUppercase +
+        * Trim +
 */
 
     //1 indexof,lastindexof
@@ -121,3 +120,25 @@ String data type- bu matnli tip
     console.log(str.includes('i',4)); // if it includes from 4 position , it is false
     console.log(str.startsWith('H')); //true
     console.log(str.endsWith('H')); //false
+
+    //3 slice(start,end) substring(start,end) substr(start,length)
+    console.log(str.slice(1,4)); //from start to end (not including end) ===	allows negatives
+    console.log(str.substring(0,2));// 	between start and end (not including end) === negative values mean 0
+    console.log(str.substr(0,2)); // 	from start get length characters === allows negative start
+    
+    //4 changing the case toLowercase,toUppercase
+    console.log(str.toLowerCase());
+    console.log(str.toUpperCase());
+
+    //5 replace(a,b) changing a -> to b
+    console.log(str.replace('str','string'));
+
+    //6 repeat(count)
+    console.log(str.repeat(2));
+
+    //6 split
+    console.log(str.split());
+    console.log(str.split(""));
+    console.log(str.split(" "));
+    //7 trim it cuts whitespace from both beginning and end
+    console.log("  hello  ".trim());
