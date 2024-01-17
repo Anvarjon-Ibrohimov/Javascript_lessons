@@ -41,3 +41,26 @@ console.log(numeric.toString(2)); // ikkilik sanoq sistemasiga
 console.log(numeric.toString(8)); // 8 lik
 console.log(numeric.toString(16)); // 16 lik
 console.log(numeric.toString(32)); // 32 lik
+
+//toFixed()
+let numeric2=14.765;
+console.log(numeric2);
+console.log(numeric2.toFixed()); // return string and also rounded
+console.log(numeric2.toFixed(2)); // return string and also rounded 2 xona aniqlikda
+console.log(numeric2.toFixed(3)); // return string and also rounded 3 xona aniqlikda
+
+//toPrecision(a) return string;  a berilgan xonagaca yaxlitlaydi
+console.log(numeric2.toPrecision());
+
+// number methods converts variables to number
+
+console.log(Number(true)); // returns 1
+console.log(Number(false)); // returns 0
+console.log(Number('10'));// returns 10
+console.log(Number(' 10'));// returns 10
+console.log(Number('10 '));// returns 10
+console.log(Number(' 10 '));// returns 10
+console.log(Number('10.33'));// returns 10.33
+console.log(Number('10,33'));// returns Nan
+console.log(Number('10 33'));// returns Nan
+console.log(Number('John'));// returns Nan
